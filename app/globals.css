@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  background-color: #38383a;
+  color: #e6e9f0;
+}
+
+* {
+  scrollbar-width: thin;
+}
+
+/* hide the native cursor only when the custom one is active */
+html.custom-cursor,
+html.custom-cursor * {
+  cursor: none !important;
+}
